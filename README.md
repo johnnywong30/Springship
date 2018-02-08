@@ -14,8 +14,3 @@ L0 -- But What Does the Data Say?<br />
 ## Results
 
 ## Conclusions
-
-
-
-
-
