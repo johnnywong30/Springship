@@ -29,7 +29,7 @@ public class MFDriver {
 
           // TRIAL 1
 	   long timeStart = System.nanoTime();
-	   int numTrials = 100;
+	   int numTrials = 100000; // Tested 10000,20000,30000, all around same time
 	   for (int trial = 0; trial < numTrials; trial++) {
 	       System.out.println(MatrixFinder.matrixSearch(trial1.matrix, -1));
 	   }
