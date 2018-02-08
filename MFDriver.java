@@ -14,8 +14,8 @@ public class MFDriver {
           // as this is the only way to perform the experiment without a high-end machine
           // due to insufficient memory for us low budget experimenters
 
-          // Matrix trial1 = new Matrix(10000); // 10000 by 10000
-          Matrix trial2 = new Matrix(100000); // 100000 by 100000
+           Matrix trial1 = new Matrix(10000); // 10000 by 10000
+          // Matrix trial2 = new Matrix(100000); // 100000 by 100000
           // Matrix trial3 = new Matrix(1000000); // 1000000 by 1000000
           // Matrix trial4 = new Matrix(10000000); // 10000000 by 10000000
           // Matrix trial5 = new Matrix(100000000); // 100000000 by 100000000
@@ -28,7 +28,15 @@ public class MFDriver {
           //********************************************
 
           // TRIAL 1
-          System.out.println(MatrixFinder.matrixSearch(trial2.matrix, 100));
-
+	   long timeStart = System.nanoTime();
+	   int numTrials = 100;
+	   for (int trial = 0; trial < numTrials; trial++) {
+	       System.out.println(MatrixFinder.matrixSearch(trial1.matrix, -1));
+	   }
+	   long timeEnd = System.nanoTime();
+	   long totalTime = timeEnd - timeStart;
+	   long averageTime = totalTime / numTrials;
+	   System.out.println("Total time: " + totalTime);
+	   System.out.println("Average time: " + averageTime);
      }
 }
