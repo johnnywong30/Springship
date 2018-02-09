@@ -14,7 +14,22 @@ L00 -- But What Does the Data Say?<br />
 
 ## Experiment Methodology
   1. Create a class that makes a n by n matrix that aligns with the rules that values increase from left to right and from top to bottom.      This was completed in Matrix.java
-  2. Our MFDriver.java starts timing prior to a loop that searches through each matrix for the bottom left value. 
-## Results
+  2. Our MFDriver.java starts timing prior to a loop that searches through each matrix for the bottom left value 1000 times. We can say        for sure that this does not interfere with our data since a O(n) method can be interpretted as the equations "An + B" or "An", where      b is a constant that includes the time it takes to iterate. 
+  3. After dividing the total time step 2 took by the number of trials - 1000 times -, we inserted this average time to search into our        spreadsheet with its corresponding matrix of size n times n.
+  4. Repeat steps 2 through 3 by executing the driver for each unique matrix.
+  5. Graph results.
+  
+## Results 
+  Control Group: <br/>
+  ![alt text](https://i.imgur.com/d8OczgE.png)
+  
+  Experiment Variation 0: <br/>
+  ![alt text](https://i.imgur.com/Wd4zn47.png)
+  
+  Experiment Variation 1: <br/>
+  ![alt text](https://i.imgur.com/1DTz18y.png)
+  
+  Experiment Variation 2: <br/>
+  ![alt text](https://i.imgur.com/qCEPdes.png)
 
 ## Conclusions
