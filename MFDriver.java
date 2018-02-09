@@ -12,7 +12,10 @@ public class MFDriver {
           // HOW TO USE:
           // Uncomment out which trial you want to perform the experiment on
           // as this is the only way to perform the experiment without a high-end machine
-          // due to insufficient memory for us low budget experimenters
+          // due to insufficient memory for us low budget experimenters.
+          // After the driver runs, add averageTime data to corresponding value in
+          // spreadsheet found here: https://goo.gl/9B94JH
+
 
           //*****CONTROL GROUP*****\\
           // Matrix trial = new Matrix(100); // 100 by 100
