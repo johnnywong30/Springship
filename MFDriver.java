@@ -73,9 +73,9 @@ public class MFDriver {
           //********************************************
 
           long timeStart = System.nanoTime(); // our start time
-          int numTrials = 100;
+          int numTrials = 1000;
           for (int trialNum = 0; trialNum < numTrials; trialNum++) {
-               System.out.println(MatrixFinder.matrixSearch(trial.matrix, trial.matrix.length * trial.matrix.length));
+               System.out.println(MatrixFinder.matrixSearch(trial.matrix, trial.matrix[trial.matrix.length - 1][trial.matrix.length - 1]));
           }
           long timeEnd = System.nanoTime(); // time after for loop finished
           long totalTime = timeEnd - timeStart; // time spent in between
