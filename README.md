@@ -33,3 +33,5 @@ L00 -- But What Does the Data Say?<br />
   ![alt text](https://i.imgur.com/qCEPdes.png)
 
 ## Conclusions
+  Our search algorithm seems to run relatively linear. However, there seems to be several outliers when running our experiment, as indicated by the spikes in our graphs. If a best line of fit is drawn on these graphs, it seems like our search algorithm is O(n). The spikes could be a result of problems involving memory or relate to the machine running these trials, as none of our searches were equivalent when run on the same matrix. The search algo looks most linear at lower values due to how quick Java can search through the matrix, but with larger matrices, more spikes appear. 
+
